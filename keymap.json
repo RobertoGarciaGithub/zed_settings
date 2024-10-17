@@ -1,0 +1,104 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "alt-1": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      "alt-down": "editor::MoveLineDown",
+      "alt-enter": "editor::GoToDefinition",
+      "alt-shift-down": "editor::DuplicateLineDown",
+      "alt-up": "editor::MoveLineUp",
+      "cmd-enter": "editor::GoToDefinition",
+      "cmd-shift-c": "editor::CopyRelativePath",
+      "ctrl-cmd-c": "editor::ToggleComments",
+      "ctrl-cmd-h": "pane::ActivatePrevItem",
+      "ctrl-cmd-l": "pane::ActivateNextItem",
+      "ctrl-h": "project_panel::ToggleFocus",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-k": null,
+      "ctrl-shift-c": "editor::ToggleComments",
+      "ctrl-y": "editor::AcceptPartialCopilotSuggestion",
+      "f9": "editor::SortLinesCaseSensitive",
+      "pagedown": "editor::MovePageDown",
+      "pageup": "editor::MovePageUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": [
+        "vim::SwitchMode",
+        "Normal"
+      ]
+    }
+  },
+  {
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "enter": "editor::Newline",
+      "ctrl-y": "editor::ConfirmCompletion"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "alt-shift-j": "editor::DuplicateLineDown",
+      "alt-shift-k": "editor::DuplicateLineUp",
+      "g c": "editor::ToggleComments",
+      "shift-h": "editor::SelectToBeginningOfLine",
+      "shift-l": "editor::SelectToEndOfLine"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "K": "editor::Hover",
+      "alt-h": "pane::ActivatePrevItem",
+      "alt-j": "editor::MoveLineDown",
+      "alt-k": "editor::MoveLineUp",
+      "alt-l": "pane::ActivateNextItem",
+      "alt-b": "workspace::ToggleLeftDock",
+      "ctrl-a": "editor::SelectAll",
+      "ctrl-shift-h": "pane::ActivatePrevItem",
+      "ctrl-shift-l": "pane::ActivateNextItem",
+      "g b": "editor::ToggleGitBlame",
+      "g c c": "editor::ToggleComments",
+      "g r": "editor::FindAllReferences",
+      "shift-alt-j": "editor::DuplicateLineDown",
+      "shift-h": "editor::MoveToBeginningOfLine",
+      "shift-l": "editor::MoveToEndOfLine"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "cmd-/": "workspace::ToggleZoom",
+      "ctrl-cmd-h": "pane::ActivatePrevItem",
+      "ctrl-cmd-l": "pane::ActivateNextItem",
+      "ctrl-h": "project_panel::ToggleFocus",
+      "ctrl-j": null,
+      "ctrl-k": "terminal_panel::ToggleFocus"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "alt-b": "workspace::ToggleLeftDock",
+      "backspace": "project_panel::Delete",
+      "cmd-c": "project_panel::CopyRelativePath",
+      "cmd-left": "project_panel::CollapseAllEntries",
+      "ctrl-h": "project_panel::CollapseAllEntries",
+      "ctrl-j": "terminal_panel::ToggleFocus",
+      "ctrl-l": "project_panel::ToggleFocus",
+      "enter": "project_panel::OpenPermanent",
+      "shift-enter": "project_panel::Open",
+      "space": "project_panel::Rename",
+    }
+  }
+]
