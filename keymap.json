@@ -46,6 +46,7 @@
   {
     "context": "Editor && vim_mode == visual",
     "bindings": {
+      "ctrl-d": "vim::SelectNext",
       "alt-j": "editor::MoveLineDown",
       "alt-k": "editor::MoveLineUp",
       "alt-shift-j": "editor::DuplicateLineDown",
